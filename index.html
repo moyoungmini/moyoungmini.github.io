@@ -33,7 +33,16 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="no-drag" oncontextmenu="return false">
+  <style type="text/css">
+    .no-drag {
+      -ms-user-select: none;
+      -moz-user-select: -moz-none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+    }
+  </style>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -81,37 +90,38 @@
     <div class="container">
       <div class="row" style="margin-bottom: 100px;">
         <h2 class="col-lg-12  text-uppercase" style="max-width: 30%; line-height: 100px;">About ME</h2>
-        <p class="text-muted " style="margin-bottom: 0; float: left; max-width: 65%; color: #000000"> &nbsp;어릴때 부터 호기심이 많은 성격에 만들어 보았던 간단한 계산기
+        <p class="text-muted " style="margin-bottom: 0; float: left; max-width: 65%; color: #000000"> &nbsp;어릴때 부터 호기심이
+          많은 성격에 만들어 보았던 간단한 계산기
           프로그램으로 무언가를 만드는 것의 재미를 느끼게 되었고 그때부터 개발에 대한 관심이 생겼습니다. 그래서 인하대학교 컴퓨터공학과를 진학하게 되었고 많은 프로젝트를 시도하고 공모전도 참여를 하면서 점차
           많은 것들을 개발 할 수 있게 되었습니다. 저의 목표는 항상 겸손한 자세로 개발을 배우며 성장해 나가는 개발자가 되고 싶습니다.</p>
       </div>
 
       <div class="row text-center">
-          <div class="col-md-4" onclick="window.open('https://moyoungmin.tistory.com')" style="cursor:pointer;">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading"></h4>
-            <p class="text-muted" style="font-weight: bold">개발 노트 블로그</p>
-          </div>
-          <div class="col-md-4" data-toggle="modal" href="#portfolioModal7" style="cursor:pointer;">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading"></h4>
-            <p class="text-muted" style="font-weight: bold">수상 경력</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading"></h4>
-            <p class="text-muted"></p>
-          </div>
+        <div class="col-md-4" onclick="window.open('https://moyoungmin.tistory.com')" style="cursor:pointer;">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading"></h4>
+          <p class="text-muted" style="font-weight: bold">개발 노트 블로그</p>
         </div>
+        <div class="col-md-4" data-toggle="modal" href="#portfolioModal7" style="cursor:pointer;">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading"></h4>
+          <p class="text-muted" style="font-weight: bold">수상 경력</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading"></h4>
+          <p class="text-muted"></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -140,6 +150,20 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/inha-taxi.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Inha - Taxi</h4>
+              <p class="text-muted">Android & CMS & PHP</p>
+            </div>
+          </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -165,20 +189,6 @@
           <div class="portfolio-caption">
             <h4>배달의 만족</h4>
             <p class="text-muted">Android & PHP</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -280,6 +290,7 @@
                   <h4>HTML & CSS & Javascript</h4>
                 </div>
                 <div class="timeline-body">
+                    <a class="text-muted" href="#portfolioModal4" target="_blank">Inha - Taxi 해커톤 CMS 제작</a> <br>
                   <a class="text-muted" data-toggle="modal" href="#portfolioModal1">Impolice WEB 외주
                     (2019 03~06)</a>
                   <br>
@@ -299,11 +310,8 @@
                   <a class="text-muted" data-toggle="modal" href="#portfolioModal1" target="_blank">Impolice Android 외주
                     (2019 03~06)</a>
                   <br>
-                  <a class="text-muted" data-toggle="modal" href="#portfolioModal3" target="_blank">배달의 만족 Copycat
-                    Project (2019 01~02)</a>
-                  <br>
-                  <a class="text-muted" href="https://github.com/moyoungmini/mrello" target="_blank">약속장소 정하기 Toy
-                    Project (2019 01)</a>
+                  
+                  <a class="text-muted" href="#portfolioModal4" target="_blank">Inha - Taxi 해커톤 Android 제작</a>
                   <br>
                   <br>
                 </div>
@@ -418,10 +426,12 @@
 
                 <nav style="font-weight: bold; text-align: left;">작품 요약</nav>
                 <p style="text-align: left;">
-                  주변 지인의 추천으로 안드로이드 어플리케이션과 관리자 웹 페이지를 만드는 외주를 받아 프로젝트를 진행하였습니다. 
-                  프로젝트에 대해 간단히 소개를 하자면 사용자가 가상의 경찰이 되어 사람들이 불법을 하는 행위에 대한 영상을 가지고 어플리케이션을 통해 신고를 합니다. 이떄 사용자가 신고한 신고 횟수가 일정량을 채울 경우 관리자를 통해 리워드를 받는 시스템입니다.
+                  주변 지인의 추천으로 안드로이드 어플리케이션과 관리자 웹 페이지를 만드는 외주를 받아 프로젝트를 진행하였습니다.
+                  프로젝트에 대해 간단히 소개를 하자면 사용자가 가상의 경찰이 되어 사람들이 불법을 하는 행위에 대한 영상을 가지고 어플리케이션을 통해 신고를 합니다. 이떄 사용자가 신고한 신고 횟수가
+                  일정량을 채울 경우 관리자를 통해 리워드를 받는 시스템입니다.
                   관리자는 사용자가 신고한 신고내역을 관리자 웹 페이지에서 판단하여 신고처리를 할지 말지를 결정 할 수 있습니다.
-                  저가 이 프로젝트를 맡은 가장 큰 이유는 사용자입장에서는 리워드를 통해 보상을 받을 수 있고 사회적 측면에서는 빈번히 일어나는 불법 행위가 줄어드는 효과가 있습니다. 즉, 어느 하나 손해보는 것이 아닌 사용자와 사회적 측면 모두 이득을 볼 수 있는 프로젝트라고 생각하여 프로젝트를 진행하였습니다.
+                  저가 이 프로젝트를 맡은 이유는 사용자는 리워드를 통해 보상을 받을 수 있고 사회적 측면에서는 리워드를 제공하지만 빈번히 일어나는 불법 행위가 줄어드는 효과가 도출됩니다. 즉, 어느
+                  누구도 손해보는 것이 아닌 사용자와 사회적 측면 모두 이득을 볼 수 있는 프로젝트라고 생각 했기 때문입니다.
                 </p>
 
 
@@ -446,32 +456,41 @@
                 <nav style="font-weight: bold; text-align: left;">Android 개발 후기</nav>
                 <p style="text-align: left;">
                   프로젝트 기획 단계에서 기술적 한계를 검토할때 동영상 편집부분 구현에 대한 고민이 있었습니다. 처음부터 동영상 편집 부분을 구현하자니 공수가 너무 많이 들고 구현 가능성에
-                  대해서도 확실하지 않아 기존에 동영상 편집 소스가 있는지를 먼저 검토했고 그 결과 MIT license로 되있던 코드를 찾을 수 있었습니다. 하지만 원래 기획했던 디자인 및 기능과는 차이가 많이 
-                  나는 소스 코드였기 때문에 기존 소스코드에서 많은 변경이 필요한 작업이었습니다. 하지만 소스코드를 분석하면서 좀 더 나은 code pattern을 공부 할 수 있었고 이로 인해 그 전까지의 프로젝트의 경우 
-                  디자인 패턴 등 코드에 대해 관심없이 기능적인 구현에만 신경을 썻지만 이 프로젝트부터 코드 관련한 패턴(이 프로젝트는 MVC 패턴 적용)과 코드 리팩토링 등에 신경을 쓰기 시작했습니다.   
+                  대해서도 확실하지 않아 기존에 동영상 편집 소스가 있는지를 먼저 검토했고 그 결과 MIT license로 되있던 코드를 찾을 수 있었습니다. 하지만 원래 기획했던 디자인 및 기능과는
+                  차이가 많이
+                  나는 소스 코드였기 때문에 기존 소스코드에서 많은 변경이 필요한 작업이었습니다. 하지만 소스코드를 분석하면서 좀 더 나은 code pattern을 공부 할 수 있었고 이로 인해 그
+                  전까지의 프로젝트의 경우
+                  디자인 패턴이나 코드에 대해 관심없이 기능적인 구현에만 신경을 썻지만 이 프로젝트부터 디자인패턴(이 프로젝트는 MVC 패턴 적용)과 유지보수를 대비하여 코드 리팩토링 등에 신경을 쓰기
+                  시작했습니다.
                   <br>
                   <br>
 
-                  이 후에는 디자이너가 준 디자인대로 작업을 시작했고 UI/UX적인 코드 구현에 있어서는 큰 어려움 없이 프로젝트를 진행 할 수 있었습니다. 하지만 이 프로젝트는 다양한 기종의 기기들이 사용할 수 있었기 때문에
-                  Q/A 기간에 테스트를 하면서 예상치 못한 버그가 나왔으며 개발 할 당시에 신경 못 썻던 앱 시나리오가 나와 다시 한번 validation의 중요성을 배웠습니다. 또한 처음으로
-                  FCM 알림을 클라이언트 부분에서 사용하였으며 외부에서 주어지는 txt 파일에서 위도 / 경도를 뽑아 와 google map에 표시하는 작업을 수행하였습니다.
+                  이 후에는 디자이너가 준 디자인대로 작업을 시작했고 UI/UX적인 코드 구현에 있어서는 큰 어려움 없이 프로젝트를 진행 할 수 있었습니다. 하지만 이 프로젝트는 다양한 기종의 기기들이
+                  사용 할 수 있기 때문에
+                  Q/A 기간에 다양한 기종에 대한 테스트를 하면서 예상치 못한 버그가 나왔으며 개발 할 당시에 신경 못 썻던 앱 시나리오가 나와 다시 한번 validation의 중요성을 배웠습니다.
+                  또한 처음으로
+                  FCM 알림을 사용하였으며 외부에서 주어지는 txt 파일에서 위도 / 경도를 뽑아 와 google map에 표시하는 작업을 수행하였습니다.
                   <br>
                   <br>
 
-                  server와 통신 시 로그인 한 이후에는 access-token 값을 가지고 통신을 하였으며 GET/POST/PATCH 등의 method와 함께 http 통신을 진행하였습니다. 프로젝트 진행 도중 많은 프로젝트들에서 서버와 통신하는
-                  코드들이 비슷하고 같은 작업임에도 불구하고 공수가 매번 드는것을 줄이고자 이 과정에서 MVC 패턴 & 서버 통신 & token 관리 등 공수를 줄일 수 있는 코드를 탬플릿화 하여 만들었습니다.
+                  server와 통신 시 로그인 한 이후에는 access-token 값을 가지고 통신을 하였으며 GET/POST/PATCH 등의 method와 함께 http 통신을 진행하였습니다.
+                  프로젝트 진행 도중 많은 프로젝트들에서 서버와 통신하는
+                  코드들이 비슷하고 같은 작업임에도 불구하고 공수가 매번 드는것을 줄이고자 이 과정에서 MVC 패턴 & 서버 통신 & token 관리 등 공수를 줄일 수 있는 코드를 탬플릿화 하여
                   만들었습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">CMS 개발 후기</nav>
                 <p style="text-align: left;">
-                  server side rendering이 아닌 html/css/js/jquery로 front-end 작업을 한 후 서버와의 통신이 필요 할때 ajax 통신을 사용하였습니다. 또한 session을 통해 자동 로그인을 구현하였으며
+                  server side rendering이 아닌 html/css/js/jquery로 front-end 작업을 한 후 서버와의 통신이 필요 할때 ajax 통신을 하도록 구현하였습니다.
+                  또한 session을 통해 로그인을 관리하였으며
                   관리자 로그인 없이 url을 통해 해당 페이지로 갈 경우 로그인 페이지로 다시 이동하도록 validation을 처리하였습니다.
                   <br>
                   <br>
-                  서버로부터 x축에 대한 y축 좌표 정보를 읽어 온 후 그래프에 표시하였으며 y축 최대 높이는 읽어 온 y값들 중 최대 값 + n(그래프에 따라 차이)으로 설정하였습니다. 또한 서버로부터 신고내역을 읽어 와 테이블에
+                  서버로부터 x축에 대한 y축 좌표 정보를 읽어 온 후 그래프에 표시하였으며 y축 최대 높이는 읽어 온 y값들 중 최대 값 + n(그래프에 따라 차이)으로 설정하였습니다. 또한
+                  서버로부터 신고내역을 읽어 와 테이블에
                   표시를 하였으며 상태관리항목에서 신고상태를 변경 할 수 있습니다. 이때 서버로 신고상태 변경정보를 알리고 서버는 해당 유저에게 FCM알림을 통해 알리는 과정을 거치게 됩니다.
-                  신고 테이블의 row에 있는 download 항목을 누를 경우 파이어베이스 연결된 url로 연결되어 동영상을 확인 할 수 있으며 테이블 최상단에 있는 항목을 클릭 시 순서대로 재 정렬을 하게 구현하였습니다.
+                  신고 테이블의 row에 있는 download 항목을 누를 경우 파이어베이스 연결된 url로 연결되어 동영상을 확인 할 수 있으며 테이블 최상단에 있는 항목을 클릭 시 순서대로 재
+                  정렬을 하게 구현하였습니다.
                   excel-export의 경우 해당 소스가 워낙 많았기 때문에 코드 커스텀 하는 과정을 좀 더 쉽게 작업을 할 수 있었습니다.
                   <br>
                   <br>
@@ -480,20 +499,24 @@
 
                 <nav style="font-weight: bold; text-align: left;">Server 개발 후기</nav>
                 <p style="text-align: left;">
-                  AWS 위에서 작업을 수행하였으며 서버는 Nginx 데이터베이스는 MySQL 개발 언어는 PHP를 사용하였습니다. 로그인 및 신고 데이터 처리 등은 기존에 해왔던 것들과 유사하여 쉽게 작업할 수 있었습니다.
+                  AWS 위에서 작업을 수행하였으며 서버는 Nginx 데이터베이스는 MySQL 개발 언어는 PHP를 사용하였습니다. 로그인 및 신고 데이터 처리 등은 기존에 해왔던 것들과 유사하여 쉽게
+                  작업할 수 있었습니다.
                   동영상 저장의 경우는 Google Firebase를 이용하여 파이어베이스에 동영상을 저장하고, url을 서버 데이터베이스에 저장하는 형식으로 진행하였습니다.
                   <br>
-                  web 통신 구현 중 ajax 통신 시 cors 문제가 생겼었고 서버에서 헤더에 allow-control 설정을 통하여 해결하였습니다. 
-                  서버 개발 중 데이터베이스에 대한 접근 횟수를 줄이고자 노력하였고 (SQL을 여러번 호출하는 것이 아닌 다양한 SQL 구문들을 사용) 사용자가 자신의 동영상 정보를 마이페이제서 불러올떄
-                  서버에서 10개씩 끊어서 데이터 정보를 보내주게 처리하여 네트워크 사용량을 조절하는데 신경을 썻습니다.
+                  web 통신 구현 중 ajax 통신 시 cors 문제가 생겼었고 서버에서 헤더에 allow-control 설정을 통하여 해결하였습니다.
+                  서버 개발 중 데이터베이스에 대한 접근 횟수를 줄이고자 노력하였고 (SQL을 여러번 호출하는 것이 아닌 다양한 SQL을 조합한 구문 사용) 사용자가 자신의 동영상 정보에 데이터를
+                  마이페이지에서 불러올떄
+                  서버에서 한 번에 모든 데이터를 불러오는 것이 아닌 10개씩 끊어서 데이터 정보를 보내주게 처리하여 네트워크 사용량을 조절하는데 신경을 썻습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">기타</nav>
                 <div style="text-align: left">개발 기간 : 2019 03 ~ 2019.06</div>
-                <div style="text-align: left">개발 Tool : Android Studio & Visual studio Code & Postman & Zeplin & WinSCP & Putty</div>
+                <div style="text-align: left">개발 Tool : Android Studio & Visual studio Code & Postman & Zeplin & WinSCP
+                  & Putty</div>
                 <div style="text-align: left">개발 환경 : Android flatform & NginX web server & PHP & MySQL</div>
                 <br>
-                <div style="text-align: left">코드는 gitlab private로 설정 되있어 로컬에서 혹은 moomin@softsquared.com 로그인 후 확인 할 수 있습니다.</div>
+                <div style="text-align: left">코드는 gitlab private로 설정 되있어 로컬에서 혹은 moomin@softsquared.com 로그인 후 확인 할 수
+                  있습니다.</div>
               </div>
             </div>
           </div>
@@ -526,32 +549,36 @@
                 <nav style="font-weight: bold; text-align: left;">작품 요약</nav>
                 <p style="text-align: left;">
                   학교 선배의 추천으로 인하대학교 홍보팀 관리자 페이지를 만들어보자는 제의를 받았습니다. 이전 학기에 '인터넷 프로그래밍' 학부 수업에서 JSP & Servlet에 대해
-                  배웠고 학교 관련된 프로젝트를 진행하면 좀 더 보람을 느낄것이라 생각되어 프로젝트를 진행하였습니다. 
-                  프로젝트를 간단히 소개하자면 안드로이드 어플리케이션에서 인하대학교에 대한 정보를 소개하고, 관리자는 관리자페이지에서 사용자를 관리하고 어플리케이션 배경화면에
-                   보여지는 이미지 순서를 변경하는 작업을 수행합니다.
-                  이때 저가 맡은 분야는 CMS page 구현 및 웹서버 구현이었습니다.
+                  배웠고 학교 관련된 프로젝트를 진행하면 좀 더 보람을 느낄것이라 생각되어 프로젝트를 진행하였습니다.
+                  프로젝트를 간단히 소개하자면 안드로이드 어플리케이션에서 인하대학교에 대한 정보를 소개하고, 관리자페이지에서 관리자는 사용자를 관리하며 어플리케이션 배경화면에
+                  보여지는 이미지 순서를 변경하는 작업을 수행합니다.
+                  이때 저가 맡은 분야는 CMS page 구현 및 웹서버 구축이었습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">Project 주요 기능</nav>
                 <p style="text-align: left;">
-                 - 이미지 Drag & Drop을 통한 순서 변경<br>
-                 - 테이블을 통한 사용자 관리<br>
-                 - session을 통한 로그인 관리<br>
+                  - 웹 서버 (AWS 위에 Apache & MariaDB) 구축<br>
+                  - 이미지 Drag & Drop을 통한 순서 변경<br>
+                  - 테이블을 통한 사용자 관리<br>
+                  - session을 통한 로그인 관리<br>
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">개발 후기</nav>
                 <p style="text-align: left;">
-                 이번 프로젝트에서 가장 크게 어려움을 느낀것은 개발환경 설정이었습니다. 지금까지 했던 작업들 대부분은 로컬에서 동작하는 것들이었지만 이 프로젝트의 경우 AWS에서 할당 받은 웹서버로 코드를 올려야 했기 때문에
-                 웹서버에 대해서 설정할것이 많았습니다. 개발 환경 설치 후 구현하는 단계에 있어서는 큰 어려움은 없었습니다. session을 통해 로그인 관리를 유지하였으며 Drag & Drop Event가 일어날 경우
-                 Database에서 이미지 순서를 변경하는 작업을 수행하였습니다. 또한 file 태그를 이용하여 파일을 웹서버로 업로드 및 삭제를 수행하였습니다. 또한 유저에 대한 정보를 테이블 형식으로 보여줬으며 웹의 특징 상
-                 다양한 해상도를 가진 기기들이 접근 할 수 있으므로 모든 width/height들은 %로 작업을 하였고 글씨 크기는 em으로 정하고 작업을 시작하였습니다.
+                  이번 프로젝트에서 가장 크게 어려움을 느낀것은 개발환경 설정이었습니다. 지금까지 했던 작업들은 로컬에서 동작하는 것들이었지만 이 프로젝트의 경우 AWS에서 할당 받은 웹서버로 코드를
+                  올려야 했기 때문에
+                  웹서버에 대해서 설정할것이 많았습니다. 개발 환경 설치 후 구현하는 단계에 있어서는 큰 어려움은 없었습니다. session을 통해 로그인 관리를 유지하였으며 Drag & Drop
+                  Event가 일어날 경우
+                  Database에서 이미지 순서를 변경하는 작업을 수행하였습니다. 또한 file 태그를 이용하여 파일을 웹서버로 업로드 및 삭제를 수행하였습니다. 또한 유저에 대한 정보를 테이블
+                  형식으로 보여줬으며 웹의 특징 상
+                  다양한 해상도를 가진 기기들이 접근 할 수 있으므로 모든 width/height들은 %로 작업을 하였고 글씨 크기는 em으로 정하고 작업을 시작하였습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">기타</nav>
                 <div style="text-align: left">개발 기간 : 2019 02~03</div>
                 <div style="text-align: left">개발 Tool : Eclipse & Putty & FileZilla</div>
-                <div style="text-align: left">개발 환경 : AWS Nginx Server & Jsp/Servlet & MariaDB</div>
-                <div style="text-align: left">코드는 외주를 받았던 작업이기 때문에 github이 아닌 로컬에서 확인 할 수 있습니다.</div>
+                <div style="text-align: left">개발 환경 : AWS Apache Server & Jsp/Servlet & MariaDB</div>
+                <div style="text-align: left">코드는 외주를 받았던 작업이기 때문에 github가 아닌 로컬에서 확인 할 수 있습니다.</div>
               </div>
             </div>
           </div>
@@ -583,8 +610,8 @@
                 <br><br>
                 <nav style="font-weight: bold; text-align: left;">작품 요약</nav>
                 <p style="text-align: left;">
-                  방학기간 동안 평소에 관심있던 배달의 민족 어플리케이션을 디자이너와 함께 카피캣해서 만들어보자는 취지에서 시작하였습니다. 카피캣 프로젝트이다 보니 설계 과정이나 
-                  아이디어에서 시간을 쏟기 보다는 최대한 배달의 민족 어플과 비슷한 Flow에서 개발에 초점을 맞춰서 진행하였습니다. 처음으로 디자이너와 같이 협업을 진행하였으며, 
+                  방학기간 동안 평소에 관심있던 배달의 민족 어플리케이션을 디자이너와 함께 카피캣해서 만들어보자는 취지에서 시작하였습니다. 카피캣 프로젝트이다 보니 설계 과정이나
+                  아이디어에서 시간을 쏟기 보다는 최대한 배달의 민족 어플과 비슷한 Flow에서 개발에 초점을 맞춰서 진행하였습니다. 처음으로 디자이너와 같이 협업을 진행하였으며,
                   클라이언트에서는 최대한 디자이너 요청사항에 맞게 개발을 하였습니다.
                 </p>
 
@@ -601,11 +628,13 @@
 
                 <nav style="font-weight: bold; text-align: left;">개발 후기</nav>
                 <p style="text-align: left;">
-                 처음으로 디자이너와 소통을 하며 진행 한 프로젝트로 제플린 및 슬랙이라는 프로그램을 이용하여 디자이너와 소통을 하였습니다. 프로젝트를 진행하면서 모르는 내용의 대부분은
-                 stackoverflow나 블로그에 있었고 이를 참조하여 개발을 진행하였습니다. 또한 API 개발 중 로그인이나 음식점 정보 API 등에 대한것들은 쉽게 구현 가능 했으나 핸드폰 인증번호 전송
-                 API의 경우 조금 더 시간이 걸렸던 프로젝트였습니다. 이 프로젝트를 통해 개발능력도 향상 되었지만 디자이너와의 소통 및 구글링과 개발 프로세스론에 대해 배울 수 있었던 프로젝트였습니다.
+                  처음으로 디자이너와 소통을 하며 진행 한 프로젝트로 제플린 및 슬랙이라는 프로그램을 이용하여 디자이너와 소통을 하였습니다. 프로젝트를 진행하면서 모르는 내용의 대부분은
+                  stackoverflow나 블로그에 있었고 이를 참조하여 개발을 진행하였습니다. 또한 API 개발 중 로그인이나 음식점 정보 API 등에 대한것들은 쉽게 구현 가능 했으나 핸드폰
+                  인증번호 전송
+                  API의 경우 조금 더 시간이 걸렸던 프로젝트였습니다. 이 프로젝트를 통해 개발능력도 향상 되었지만 디자이너와의 소통 및 구글링과 개발 프로세스론에 대해 배울 수 있었던
+                  프로젝트였습니다.
                 </p>
-                
+
                 <nav style="font-weight: bold; text-align: left;">기타</nav>
                 <div style="text-align: left">개발 기간 : 2019 01 ~ 2019.02</div>
                 <div style="text-align: left">개발 Tool : Android Studio & Postman & Zeplin & WinSCP & Putty</div>
@@ -635,20 +664,48 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Inha Taxi</h2>
-                <p class="item-intro text-muted">Android & CMS & PHP</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/inha-taxi.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                <h2 class="text-uppercase">Inha - Taxi</h2>
+                <p class="item-intro text-muted">Andoird & CMS & PHP</p>
+
+                <iframe width="100%" height="400px;" class="d-block mx-auto"
+                  src="https://www.youtube.com/embed/BBnTAxOk4IE?autoplay=1" muted></iframe>
+
+                <br><br>
+                <nav style="font-weight: bold; text-align: left;">작품 배경 및 요약</nav>
+                <p style="text-align: left;">
+                  인하대학교를 통학하는 학생들 대부분은 주안역에서 511버스를 타고 등/하교를 합니다. 그러나 급한 볼일이 있거나 막차시간 혹은 수업시간으로 인해 시간이 촉박할때는
+                  버스를 타기에는 시간이 촉박합니다. 이유는 등/하교 시간에는 사람들이 많이 몰리며 버스를 타면 아무래도 학교까지 혹은 역까지 직행으로 가는것이 아닌 돌아서가기 때문
+                  입니다. 그래서 대부분의 학생들은 이러한 경우에 택시를 자주 이용합니다. 하지만 학생들 대부분은 택시를 혼자서 이용을 합니다. 여러명이서 같이 택시를 이용한다면 비용
+                  절감이 될텐데 왜 혼자 택시를 타는지에 대한 고민한 결과 이유는 다음과 같다고 생각을 했습니다. 첫번째로는 같이 택시를 타고 싶어도 누가 택시를 타고 싶어하고 목적지가
+                  어디인지를 모르는점이고 두번째로는 택시를 합승한 사람들이 서로 신뢰 할 수 없는점입니다. 저희는 이러한 2가지 이유를 택시를 이용하고 싶어하는
+                  사람들끼리 소통할 수 있는 커뮤니케이션 어플맄이션을 제공하고 학생증 인증방식으로 신뢰성유무 또한 해결해주는 어플리케이션을 제작하였습니다.
+                </p>
+
+                <nav style="font-weight: bold; text-align: left;">Project 주요 기능</nav>
+                <p style="text-align: left;">
+                  - Google Cloud Vision API를 이용한 텍스트 추출과 이미지 편집 기능<br>
+                  - 3rd party API Kakao Map, Kakao Keyword rest API 사용<br>
+                  - Firebase에서 제공하는 Real time database를 사용한 채팅 기능<br>
+                  - 안드로이드 & 웹 플랫폼 프로그램 제공<br>
+                  - 안드로이드(Retrofit 통신) & 웹 (Ajax 통신)<br>
+                  - Nginx Server, MySQL DB, PHP Language를 이용한 서버 구축<br>
+                </p>
+
+                <nav style="font-weight: bold; text-align: left;">개발 후기</nav>
+                <p style="text-align: left;">
+                  저가 이번 프로젝트에서 맡은 개발적인 역할은 안드로이드에서는 3rd party API 구현과 Google Cloud Vision API를 이용한 텍스트 추출 및 이미지 편집 구현과
+                  CMS 페이지 클라이언트 구현을 맡았습니다. 이번 해커톤에서 어려움을 느꼇던점은 git 충돌과 프로젝트 계획이었습니다. 저희 팀원들과 일을 분배할 떄 최대한 Activity
+                  별로 구별을 했지만 각 클래스에서 사용하는 많은 공유변수가 있어 정확히 화면별로 태스크를 나누기는 힘들었습니다. 이로 인해 git 충돌이 일어났고 이를 해결하는 과정에서 sourcetree를 사용하여 좀
+                  더 github에 익숙해지는 시간을 가졌습니다. 그리고 이번 해커톤 주제는 인하대학교에 도움이 되는 프로그램 제작이었는데 프로젝트를 계획하는데 어려움을 느꼇습니다.
+                  지금까지 대부분의 프로젝트에서 개발위주로 포지션을 맡아 진행하여 프로젝트 개발 첫 단계인 기획단계부터 어떻게 진행할지에 대해 막막했지만 '소프트웨어 공학' 과목을 수강하면서 배운
+                  프로젝트 모델링 하는 과정(기획->설계->개발->테스트->배포)을 생각하면서 프로젝트 타켓, 사용 이유, 이 프로그램을 대체할 만한것이 있는지 등 끊임 없이 기획단계를
+                  생각하며 진행하여 조금 더 쉽게 프로젝트 모델링하는 과정을 해결하였습니다.
+                </p>
+
+                <nav style="font-weight: bold; text-align: left;">기타</nav>
+                <div style="text-align: left">개발 기간 : 2019.09.28 ~ 2019.09.29</div>
+                <div style="text-align: left">개발 Tool : Android Studio & Visual studio Code & Postman & Zeplin & WinSCP & Putty</div>
+                <div style="text-align: left">개발 환경 : Android flatform & CMS & NginX web server & PHP & MySQL</div>
               </div>
             </div>
           </div>
@@ -747,61 +804,131 @@
                 <p class="item-intro text-muted"></p>
 
                 <div class="row" style="margin-bottom: 100px;">
-                  <img style="display: inline" class="" src="img/award/2015-award-1.jpg" width="20%" height="250px" alt="">
-                  <div class="text-muted" style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 5%;">
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2015 GIF 빅데이터 부분 해커톤</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 주제</nav> : 빅데이터를 이용한 프로그램 개발</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 내용</nav> : 사용자가 반려견의 증상을 키워드로 입력을 한 후 어플리케이션에서 해당 증상의 키워드들을 바탕으로 해당되는 병명의 리스트를 뽑아주고 해결책을 제시해주는 어플리케이션</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 역할</nav> : 아디이어 기획 및 발표</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 결과</nav> : 대구 창조 경제 혁신 센터장 상 수상</nav>
+                  <img style="display: inline" class="" src="img/award/2015-award-1.jpg" width="20%" height="250px"
+                    alt="">
+                  <div class="text-muted"
+                    style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 5%;">
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2015 GIF 빅데이터 부분 해커톤
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 빅데이터를 이용한 프로그램 개발
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 사용자가 반려견의 증상을 키워드로 입력을 한 후 어플리케이션에서 해당
+                      증상의 키워드들을 바탕으로 해당되는 병명의 리스트를 뽑아주고 해결책을 제시해주는 어플리케이션
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 역할</nav> : 아디이어 기획 및 발표
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 결과</nav> : 대구 창조 경제 혁신 센터장 상 수상
+                    </nav>
                   </div>
                 </div>
 
                 <div class="row" style="margin-bottom: 100px;">
-                  <img style="display: inline" class="" src="img/award/2019-award-1.jpg" width="20%" height="250px" alt="">
-                  <div class="text-muted" style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 0%;">
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 국토교통 빅데이터 해커톤</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 주제</nav> : 빅데이터 기반 솔루션 제공 프로그램 개발</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 내용</nav> : 갈수록 늘어나는 전동스쿠터로 인해 미국 유럽 등 다양한 나라에서 전동스쿠터로 인한 사고가 증가하고 있다. 우리나라 역시 사고가 발생할 것이기 때문에 우리는 이에 대한 방안이 필요하다. 그래서 우리는 사고다발지역과 혹은 사고가 더욱 일어나서는 안되는 곳 등에대한 네트워크 분석 기법을 통하여 속도규제 지역을 선정해주는 프로그램을 개발하였다.</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 역할</nav> : WEB 개발</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 결과</nav> : 장려상 수상</nav>
+                  <img style="display: inline" class="" src="img/award/2019-award-1.jpg" width="20%" height="250px"
+                    alt="">
+                  <div class="text-muted"
+                    style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 0%;">
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 국토교통 빅데이터 해커톤
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 빅데이터 기반 솔루션 제공 프로그램 개발
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 갈수록 늘어나는 전동스쿠터로 인해 미국 유럽 등 다양한 나라에서
+                      전동스쿠터로 인한 사고가 증가하고 있다. 우리나라 역시 사고가 발생할 것이기 때문에 우리는 이에 대한 방안이 필요하다. 그래서 우리는 사고다발지역과 혹은 사고가 더욱 일어나서는
+                      안되는 곳 등에대한 네트워크 분석 기법을 통하여 속도규제 지역을 선정해주는 프로그램을 개발하였다.
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 역할</nav> : WEB 개발
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 결과</nav> : 장려상 수상
+                    </nav>
                   </div>
                 </div>
 
                 <div class="row" style="margin-bottom: 100px;">
-                  <img style="display: inline" class="" src="img/award/2019-award-2.JPG" width="20%" height="250px" alt="">
-                  <div class="text-muted" style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 1%;">
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 서울 통합이동서비스(MaaS) 해커톤</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 주제</nav> : 사용자 맞춤형 교통 알림 어플리케이션</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 내용</nav> : 눈 앞에서 지하철 혹은 버스를 놓치는 머피의 법칙을 깨는 샐리의 법칙을 만들고자 이 어플리케이션을 제안하였습니다. 사용자가 가고자하는 지역과 최대 도착시간을 설정한 후 환승시간을 최소한 상태를 base로, 사용자 맞춤형(시간단축 혹은 덜 혼잡한 루트)으로 FCM알림으로 사용자에게 '00님 지금 출발하면 좋은 일이 일어날거에요!'라고 알려주는 어플리케이션입니다. </nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 역할</nav> : Android 개발 및 기획</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 결과</nav> : 본선 진출</nav>
+                  <img style="display: inline" class="" src="img/award/2019-award-2.JPG" width="20%" height="250px"
+                    alt="">
+                  <div class="text-muted"
+                    style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 1%;">
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 서울 통합이동서비스(MaaS) 해커톤
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 사용자 맞춤형 교통 알림 어플리케이션
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 눈 앞에서 지하철 혹은 버스를 놓치는 머피의 법칙을 깨는 샐리의 법칙을
+                      만들고자 이 어플리케이션을 제안하였습니다. 사용자가 가고자하는 지역과 최대 도착시간을 설정한 후 환승시간을 최소한 상태를 base로, 사용자 맞춤형(시간단축 혹은 덜 혼잡한
+                      루트)으로 FCM알림으로 사용자에게 '00님 지금 출발하면 좋은 일이 일어날거에요!'라고 알려주는 어플리케이션입니다.
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 역할</nav> : Android 개발 및 기획
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 결과</nav> : 본선 진출
+                    </nav>
                   </div>
                 </div>
 
                 <div class="row" style="margin-bottom: 100px;">
-                  <img style="display: inline" class="" src="img/award/2019-award-3.JPG" width="20%" height="250px" alt="">
-                  <div class="text-muted" style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 1%;">
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 NH 디지털혁신캠퍼스 챌린지 해커톤</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 주제</nav> : 농협 관련 일반부문</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 내용</nav> : 현재 많은 디자이너들은 같은 형식의 디자인들을 반복적으로 수행하는 경우가 많다고한다. 만약 이러한 반복적인 일들을 대신 해주는 프로그램이 있다면 어떨까하는 관점에서 출발하였다. 이 프로그램을 사용할 경우 직접 농산물들을 판매하시는 분들은 디자인 관련 비용을 절감한 상태로 원하는 디자인을 얻을 수 있으며 우리도 일정량의 금액을 얻을 수 있는 기대효과가 있다.</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 역할</nav> : Web 개발</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 결과</nav> : 장려상 수상</nav>
+                  <img style="display: inline" class="" src="img/award/2019-award-3.JPG" width="20%" height="250px"
+                    alt="">
+                  <div class="text-muted"
+                    style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 1%;">
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 NH 디지털혁신캠퍼스 챌린지 해커톤
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 농협 관련 일반부문
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 현재 많은 디자이너들은 같은 형식의 디자인들을 반복적으로 수행하는
+                      경우가 많다고한다. 만약 이러한 반복적인 일들을 대신 해주는 프로그램이 있다면 어떨까하는 관점에서 출발하였다. 이 프로그램을 사용할 경우 직접 농산물들을 판매하시는 분들은
+                      디자인 관련 비용을 절감한 상태로 원하는 디자인을 얻을 수 있으며 우리도 일정량의 금액을 얻을 수 있는 기대효과가 있다.
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 역할</nav> : Web 개발
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 결과</nav> : 장려상 수상
+                    </nav>
                   </div>
                 </div>
 
                 <div class="row" style="margin-bottom: 100px;">
-                  <img style="display: inline" class="" src="img/award/2019-award-4.JPG" width="20%" height="250px" alt="">
-                  <div class="text-muted" style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 1%;">
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 인하대학교 컴퓨터공학과 해커톤</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 주제</nav> : 인하대학교 관련 솔루션 프로그램</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 내용</nav> : 인하대학교 학우 대부분은 주안역 앞에 있는 버스정류장에서 511버스를 타고 갑니다. 하지만 지각을 할 경우나 막차 시간 근처의 경우에 택시를 타곤합니다. 이때 여러 학분들은 목적지는 같지만 대부분 혼자 탑니다. 이유는 누가 자신의 목적지를 모른다는점과 신뢰할 수 없는 사람들과 같이 합승한다는점이 불안합니다. 저희는 이러한 문제점들에 대해 인하대학교 학우라는 신뢰할 수 있는 사람들과 목적지를 공유할 수 있는 커뮤니케이션 어플리케이션을 제작하였습니다.</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 역할</nav> : Android 개발 & Web 개발</nav>
-                    <nav style="margin-bottom: 5px;"><nav style="float: left; font-weight: 700;">공모전 결과</nav> : 3위</nav>
+                  <img style="display: inline" class="" src="img/award/2019-award-4.JPG" width="20%" height="250px"
+                    alt="">
+                  <div class="text-muted"
+                    style="text-align: left; max-width: 65%; color: #000000; margin-left: 3%; margin-top: 1%;">
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 이름</nav> : 2019 인하대학교 컴퓨터공학과 해커톤
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 인하대학교 관련 솔루션 프로그램
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 인하대학교 학우 대부분은 주안역 앞에 있는 버스정류장에서 511버스를
+                      타고 갑니다. 하지만 지각을 할 경우나 막차 시간 근처의 경우에 택시를 타곤합니다. 이때 여러 학분들은 목적지는 같지만 대부분 혼자 탑니다. 이유는 누가 자신의 목적지를
+                      모른다는점과 신뢰할 수 없는 사람들과 같이 합승한다는점이 불안합니다. 저희는 이러한 문제점들에 대해 인하대학교 학우라는 신뢰할 수 있는 사람들과 목적지를 공유할 수 있는
+                      커뮤니케이션 어플리케이션을 제작하였습니다.
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 역할</nav> : Android 개발 & Web 개발 & 기획
+                    </nav>
+                    <nav style="margin-bottom: 5px;">
+                      <nav style="float: left; font-weight: 700;">공모전 결과</nav> : 3위
+                    </nav>
                   </div>
                 </div>
 
-              
+
 
               </div>
             </div>
