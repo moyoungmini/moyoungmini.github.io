@@ -130,7 +130,7 @@
         <p class="text-muted " style="margin-bottom: 0; float: left; max-width: 65%; color: #000000"> &nbsp;어릴때 부터 호기심이
           많은 성격에 만들어 보았던 간단한 계산기
           프로그램으로 무언가를 만드는 것의 재미를 느끼게 되었고 그때부터 개발에 대한 관심이 생겼습니다. 그래서 인하대학교 컴퓨터공학과를 진학하게 되었고 많은 프로젝트를 시도하고 공모전도 참여를 하면서 점차
-          많은 것들을 개발 할 수 있게 되었습니다. 저의 목표는 항상 겸손한 자세로 개발을 배우며 성장해 나가는 개발자가 되고 싶습니다.</p>
+          많은 것들을 개발 할 수 있게 되었습니다. 저의 목표는 항상 겸손한 자세로 배우며 성장해 나가는 개발자가 되고 싶습니다.</p>
       </div>
 
       <div class="row text-center">
@@ -201,6 +201,20 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/thisalarm-logo.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>이런 알람</h4>
+            <p class="text-muted">Android</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -228,20 +242,7 @@
             <p class="text-muted">Android & PHP</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
-          </div>
-        </div>
+        
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
@@ -327,7 +328,7 @@
                   <h4>HTML & CSS & Javascript</h4>
                 </div>
                 <div class="timeline-body">
-                  <a class="text-muted" href="#portfolioModal4" target="_blank">Inha - Taxi 해커톤 CMS 제작</a> <br>
+                  <a class="text-muted" data-toggle="modal" href="#portfolioModal4" target="_blank">Inha - Taxi 해커톤 CMS 제작 (2019.09)</a> <br>
                   <a class="text-muted" data-toggle="modal" href="#portfolioModal1">Impolice WEB 외주
                     (2019 03~06)</a>
                   <br>
@@ -347,8 +348,11 @@
                   <a class="text-muted" data-toggle="modal" href="#portfolioModal1" target="_blank">Impolice Android 외주
                     (2019 03~06)</a>
                   <br>
-
-                  <a class="text-muted" href="#portfolioModal4" target="_blank">Inha - Taxi 해커톤 Android 제작</a>
+                  <a class="text-muted" data-toggle="modal" href="#portfolioModal5" target="_blank">이런알람 Android 제작 (2019.06~2019.09)</a>
+                  <br>
+                  <a class="text-muted" data-toggle="modal" href="#portfolioModal4" target="_blank">Inha - Taxi 해커톤 Android 제작 (2019.09)</a>
+                  <br>
+                  <a class="text-muted" data-toggle="modal" href="#portfolioModal3" target="_blank">배달의 만족 Android 제작 (2019.01 ~ 2019.02)</a>
                   <br>
                   <br>
                 </div>
@@ -464,11 +468,11 @@
                 <nav style="font-weight: bold; text-align: left;">작품 요약</nav>
                 <p style="text-align: left;">
                   주변 지인의 추천으로 안드로이드 어플리케이션과 관리자 웹 페이지를 만드는 외주를 받아 프로젝트를 진행하였습니다.
-                  프로젝트에 대해 간단히 소개를 하자면 사용자가 가상의 경찰이 되어 사람들이 불법을 하는 행위에 대한 영상을 가지고 어플리케이션을 통해 신고를 합니다. 이떄 사용자가 신고한 신고 횟수가
+                  프로젝트에 대해 간단히 소개를 하자면 사용자가 가상의 경찰이 되어 사람들이 하는 불법 행위에 대한 영상을 가지고 어플리케이션을 통해 신고를 합니다. 이때 사용자가 신고한 신고 횟수가
                   일정량을 채울 경우 관리자를 통해 리워드를 받는 시스템입니다.
-                  관리자는 사용자가 신고한 신고내역을 관리자 웹 페이지에서 판단하여 신고처리를 할지 말지를 결정 할 수 있습니다.
-                  저가 이 프로젝트를 맡은 이유는 사용자가 영상을 통해 신고하는 공수가 있지만 리워드를 통해 보상을 받을 수 있고 사회적 측면에서는 리워드를 제공하지만 빈번히 일어나는 불법 행위가 줄어드는 효과가 도출됩니다. 즉, 어느
-                  손해보는 것이 아닌 사용자와 사회적 측면 모두 이득을 볼 수 있는 프로젝트라고 생각 했기 때문입니다.
+                  관리자는 사용자가 신고한 신고내역을 관리자 웹 페이지에서 신고한 영상을 가지고 판단하여 신고처리 여부를 결정 할 수 있습니다.
+                  저가 이 프로젝트를 맡은 가장 큰 이유는 다음과 같습니다. 사용자가 영상을 통해 신고하는 공수가 있지만 리워드를 통해 보상을 받을 수 있고 사회적 측면에서는 리워드를 제공하지만 빈번히 일어나는 불법 행위가 줄어드는 효과가 도출됩니다. 즉, 어느
+                   누구도 손해보는 것이 아닌 사용자와 사회적 측면 모두 긍정적 효과를 볼 수 있는 프로젝트라고 생각했기 때문입니다.
                 </p>
 
 
@@ -477,7 +481,7 @@
                   - 동영상 편집 <br>
                   - 웹 페이지에서 신고내역 변경에 따른 실시간 FCM 알림 <br>
                   - 블랙박스 영상에서 주어지는 txt 파일 데이터 파싱 개발 <br>
-                  - Android Laoyout, RecyclerView, Viewpager, FrameLayout, Glide 등 Andorid UI 구성<br>
+                  - Android Laoyout, RecyclerView, Viewpager, FrameLayout, Glide 등 Android UI 구성<br>
                   - Google Map 3rd party API 사용<br>
                   - Android - Retrofit Http 통신 <br>
                   - Paging 기법 사용<br> <br>
@@ -699,7 +703,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Inha - Taxi</h2>
-                <p class="item-intro text-muted">Andoird & CMS & PHP</p>
+                <p class="item-intro text-muted">Android & CMS & PHP</p>
 
                 <iframe width="100%" height="400px;" class="d-block mx-auto"
                   src="https://www.youtube.com/embed/BBnTAxOk4IE?autoplay=1" muted></iframe>
@@ -737,7 +741,7 @@
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">기타</nav>
-                <div style="text-align: left">개발 기간 : 2019.09.28 ~ 2019.09.29</div>
+                <div style="text-align: left">개발 기간 : 2019.09.01 ~ 2019.09.29</div>
                 <div style="text-align: left">개발 Tool : Android Studio & Visual studio Code & Postman & Zeplin & WinSCP
                   & Putty</div>
                 <div style="text-align: left">개발 환경 : Android flatform & CMS & NginX web server & PHP & MySQL</div>
@@ -749,8 +753,8 @@
     </div>
   </div>
 
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+   <!-- Modal 5 -->
+   <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -763,20 +767,61 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                <h2 class="text-uppercase">이런알람</h2>
+                <p class="item-intro text-muted">Android</p>
+
+                <iframe width="100%" height="400px;" class="d-block mx-auto"
+                  src="https://www.youtube.com/embed/BBnTAxOk4IE?autoplay=1" muted></iframe>
+
+                <br><br>
+                <img class="img-fluid" src="img/portfolio/thisalarm-img.png" alt="">
+                <nav style="font-weight: bold; text-align: left;">프로젝트 소개</nav>
+                <p style="text-align: left;">
+                  저는 영어공부를 하면서 영어를 읽고, 쓰기는 좀 더 수월하게 진행하였지만 외국인과 말하고 듣는것에는 항상 어려움이 있었습니다. 
+                  저는 그러한 문제점을 저가 영어공부를 할때 발음에 신경을 쓰지 않아서라고 생각을 하였습니다. 또한 저는 영어공부를 주기적으로 실행하는 방법을 생각해보다가 
+                  알람기능과 함께 사용한다면 어느정도의 강제성으로 지속적으로 공부할 수 있다고 생각을 하였습니다. 그래서 저는 이러한 방법을 사용하여 영어발음을 좀 더 향상시킬 
+                  수 있도록 도와주는 어플리케이션을 기획하기 시작하였습니다. 쉽게말하면 주기적인 알람을 통해 영어발음 공부를 도와주는 어플리케이션입니다. 알람이 울리면 정확한 
+                  영어단어 발음을 사용해야 알람이 해지되게 하였으며 만약 제한시간 이내에 풀지 못할 경우 5분후 다시 알람이 울리게끔 만들었습니다. 화면별로 소개를 하면 다음과 
+                  같습니다. <br>
+                  -1) 메인화면 : 메인화면은 알람들을 리스트업 해주는 화면으로 알람에 대한 ON/OFF 설정, 알람이 울리는 요일 및 시간과 알람 삭제(스와이프를 통한 삭제)를 할 수 있습니다. <br>
+                  -2) 환경설정화면 : 이런알람에 테마 색 및 알람에 대한 전체 설정을 할 수 있습니다. 영어단어 난이도, 갯수, 시간제한 등을 설정하며 이어폰에 대한 소리 설정을 할 수 
+                  있습니다. 이는 만약 이어폰을 연결했을 경우 소리가 이어폰에서 나올지 아니면 핸드폰 스피커에서 나올지를 설정 할 수 있습니다. <br>
+                  -3) 알람 추가 및 변경 화면 : 메인 화면에 있던 알람 아이템을 클릭 할 경우 알람 시간과 요일 그리고 알람 이름을 설정할 수 있습니다. 또한 사용자가 알람이 울릴떄 
+                  진동으로 할지 소리로 할지를 설정 할 수 있습니다. <br>
+                  -4) 알람 해제 화면 : 알람이 울릴 경우 알람을 5분뒤로 설정하거나 혹은 알람해제를 통해 영어단어인식화면으로 전환합니다. <br>
+                  -5) 영단어 미션 화면 : 환경설정화면에서 정한 영단어 갯수, 난이도, 시간제한에 맞추어 미션이 시작되며 스피커버튼을 누른 발음대로 정확한 발음을 수행해야 미션해제
+                   횟수를 증가시킬 수 있습니다. <br>
+                </p>
+
+                <nav style="font-weight: bold; text-align: left;">개발 후기</nav>
+                <p style="text-align: left;">
+                  이번 프로젝트에서 가장 신경써서 구현한 부분은 '알람 기능'이었습니다. 사용자가 알람을 등록할때 SQLite에 알람에 대한 정보(시간과 요일 라벨 등)와 
+                  AlarmReceiver에 해당 시간을 등록하게 하였습니다. 이때 Pendingintent를 사용하였고 intent에 알람에서 필요한정보(알람시간, 라벨, 요일, 소리설정 등)를 추가하여
+                   send하였습니다. 각 pendingintent는 알람의 notificationId를 통해 구별하였습니다. 그리고 알람이 울릴 경우를 생각해보면 알람해제 버튼을 눌렀을때 다시 그 시간과
+                    동일하게 AlarmReceiver에다가 등록을 하였고 5분 후 알람버튼을 누를 경우 AlarmReceiver 해당 시간 + 5min을 추가하여 등록을 하였습니다. 이때 flag변수를 함께 
+                    intent에 전송하여 flag변수가 true일 경우 알람해제시 AlarmReceiver에다가 등록을하지 않도록 구현하였습니다. (알람 중복 방지) <br>
+                  또한 알람기능을 구현하면서 정시에 알람이 울리게끔하는부분에서 많은 어려움이 있었습니다. 실제로 제 지인들 핸드폰을 빌려와 APK를 설치한 후 같은 시간대에 알람이 
+                  울리는 테스트를 시행한 결과 알람이 울리는 시간이 제각각이였고 저는 이러한 문제를 핸드폰 SDK마다 알람을 다르게 Set하여 해결하였습니다. 지금까지와는 다르게 
+                  알람부분은 Android 4대 컴포넌트 중 Broadcast와 Receiver를 주로 사용했기때문에 이해하기에 좀 더 시간이 걸렸지만 안드로이드에 기본에 좀 더 알아갈 수 있던 좋은 
+                  기회라고 생각합니다. <br> <br>
+                  영어단어 인식의 경우 구글에서 제공하는 SpeechRecognize 클래스를 통해 좀더 쉽게 개발을 하였고 영어단어를 모두 DB에 저장하는것은 비효율적이라고 생각하여 공개 
+                  발행되있는 영어단어 엑셀을 불러와 I/O에 저장을 하는 방식으로 영어단어를 가져왔습니다. 또한 저는 항상 안드로이드 핸드폰을 사용해왔지만 아이폰 느낌의 UI를 원했
+                  습니다. 그래서 저는 디자이너와 실제로 주 1-2회 컨택을 하면서 같이 개발을 진행하였습니다. 그 결과 저가 자부할 수 있을 정도로 퀄리티 있는 어플리케이션 디자인이
+                   나올 수 있었습니다.
+                </p>
+
+                <nav style="font-weight: bold; text-align: left;">Project 주요 기능</nav>
+                <p style="text-align: left;">
+                  - Broadcast / Receiver / service를 통한 알람 등록 <br>
+                  - 안드로이드 내장 DB인 SQLite를 통해 알람에 대한 요일/시간에 대해 등록을 하였고 알람설정에 대한 내용은 Sharedpreference를 통해 저장을 하였습니다. <br>
+                  - 구글에서 제공하는 SpeechRecognizer 클래스를 통해 음성인식을 수행하였습니다. <br>
+                  - 영어단어에대한 난이도별로 엑셀화하여 저장을 하고 workbook 클래스를 통해 I/O처리를 수행하였습니다. <br>
+                </p>
+
+                <nav style="font-weight: bold; text-align: left;">기타</nav>
+                <div style="text-align: left">개발 기간 : 2019.06.22 ~ 2019.09.05</div>
+                <div style="text-align: left">개발 Tool : Android Studio & Zeplin</div>
+                <div style="text-align: left">개발 환경 : Android flatform</div>
               </div>
             </div>
           </div>
