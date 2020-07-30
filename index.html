@@ -494,6 +494,8 @@
                     style="color: #6c757d">github.com/moyoungmini</a></p>
               </div>
             </div>
+
+
           </form>
         </div>
       </div>
@@ -524,10 +526,10 @@
                 <h2 class="text-uppercase">Impolice</h2>
                 <p class="item-intro text-muted">Android & WEB & Server</p>
 
-                <iframe width="48%" height="300px;" class="mx-auto"
-                  src="https://www.youtube.com/embed/rbdxiHKIXf4" muted></iframe>
-                <iframe width="48%" height="300px;" class="mx-auto"
-                  src="https://www.youtube.com/embed/UikKaE_IPw4" muted></iframe>
+                <iframe width="48%" height="300px;" class="mx-auto" src="https://www.youtube.com/embed/rbdxiHKIXf4"
+                  muted></iframe>
+                <iframe width="48%" height="300px;" class="mx-auto" src="https://www.youtube.com/embed/UikKaE_IPw4"
+                  muted></iframe>
 
                 <br><br>
                 <img class="img-fluid" src="img/portfolio/impolice1.JPG" width="32%" alt="">
@@ -537,7 +539,7 @@
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
                   본 프로젝트는 외주를 받아 진행했으며, 사람들의 무분별한 불법 행위를 신고할 수 있도록 도와주는 어플리케이션을 개발했습니다.<br>
-                  어플리케이션에서 영상과 신고정보를 통해 신고를 하면, 관리자 페이지에서 신고 목록들을 확인하며 신고처리 여부를 결정합니다.
+                  어플리케이션에서 영상, 신고정보를 가지고 신고를 하면, 관리자 페이지에서 신고 목록들을 확인하며 신고 여부를 결정합니다.
                 </p>
 
 
@@ -547,9 +549,6 @@
                   - 디자이너 1명<br>
                   - PM 1명<br>
 
-
-
-
                 <nav style="font-weight: bold; text-align: left;">3. 프로젝트 주요 기능</nav>
                 <p style="text-align: left;">
                   - UI 구축 및 Retrofit 통신<br>
@@ -558,8 +557,7 @@
                   - Google Map 3rd Party API 사용<br>
                   - Paging 기법 사용<br>
                   - 그래프, 지도, 신고 목록 테이블을 포함한 웹 페이지 구축 및 Ajax 통신<br>
-                  - 신고 목록들 엑셀 다운로드<br>
-
+                  - 신고 목록 엑셀 다운로드<br>
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">4. 프로젝트 후기</nav>
@@ -567,15 +565,14 @@
                   본 프로젝트에서 동영상 편집 기능이 가장 난이도가 있었습니다. 처음부터 이 기능을 구현하면 시간이 너무 많이 들고 구현이 불확실했습니다. 그래서 상용화할 수 있는 동영상 편집 오픈소스
                   HGLVideoTrimmer를 찾았습니다. 먼저 오픈소스 전체 흐름을 이해한 다음, 필요한 부분의 event를 catch하고 모듈 안에 필요 기능을 추가하는 방식으로 개발했습니다.
                   <br><br>
-                  신고 목록들을 보여줄 때 한 번에 많은 양의 데이터를 받아올 경우 네트워크 낭비가 심해 Paging 기법을 사용하였습니다. Recyclerview에서 제일 마지막 아이템을 스크롤을
-                  했을 때 last index를 서버에 보내고, 서버로부터 일부 데이터를 받아 notify하였습니다.
+                  신고 목록들을 보여줄 때 한 번에 많은 양의 데이터를 받아올 경우 네트워크 낭비가 심해 Paging 기법을 사용했습니다. Recyclerview에서 제일 마지막 아이템을 스크롤을
+                  했을 때 last index를 서버에 보내고, 서버로부터 일부 데이터를 받아 notify 했습니다.
                   <br><br>
-                  사진을 firebase storage에 저장한 후, DB에 url을 저장하는 방식으로 수행하였습니다. 처음에 서버안의 directory에 사진을 저장하는 방식을 생각했으나 이미지
-                  관리, 서버 용량, 속도 문제로 firebase storage에 저장하는 방식을 채택하였습니다. 이때 Firebase 저장소 용량을 줄이기 위해 클라이언트에서 사진을 압축하고
-                  storage에 업로드 하였습니다.
+                  영상을 firebase storage에 저장한 후, DB에 url을 저장하는 방식으로 수행했습니다. 처음에 서버 안의 directory에 사진을 저장하는 방식을 생각했으나 이미지
+                  관리, 서버 용량, 속도 문제로 firebase storage에 저장하는 방식을 채택했습니다.
                   <br><br>
-                  관리자 페이지에서 신고내역을 변경하면 사용자에게 실시간으로 알리기 위해 FCM을 사용하였습니다. 왜냐하면 웹서버와 어플리케이션은 Http 프로토콜을 사용하므로 서버에서 클라이언트로
-                  Request 없이 데이터를 전송 못하기 때문입니다.
+                  관리자 페이지에서 신고내역을 변경하면 사용자에게 실시간으로 알리기 위해 FCM을 사용했습니다. 왜냐하면 웹서버와 어플리케이션은 Http 프로토콜을 사용하므로 서버에서 클라이언트로
+                  Request 없이 데이터를 전송 못 하기 때문입니다.
                 </p>
 
                 <img class="img-fluid" src="img/portfolio/impolice_tb.JPG" width="70%" height="150px" alt="">
@@ -584,10 +581,10 @@
                 <div style="text-align: left">개발 기간 : 2019 03 ~ 2019.07</div>
                 <div style="text-align: left">개발 툴 : Android Studio & Visual studio Code & PhpStorm & Datagrip & Postman
                   & Zeplin & SourceTree</div>
-                <div style="text-align: left">개발 언어 : Java, html, css, javascript, PHP, SQL</div>
+                <div style="text-align: left">개발 언어 : Java, html, css, javascript, NPM</div>
                 <br>
                 <div style="text-align: left">코드는 회사 규정상 gitlab private로 설정 되있고 해당 프로젝트의 경우 포트폴리오 사용여부에 고객사측에서 동의하였기 때문에
-                  기재하였습니다. 코드의 경우 로컬에서 혹은 moomin@softsquared.com 로그인 후 확인 할 수 있습니다.</div>
+                  기재했습니다. 코드의 경우 로컬에서 혹은 moomin@softsquared.com 로그인 후 확인 할 수 있습니다.</div>
                 <br>
                 <img class="img-fluid" src="img/portfolio/gitlab_img.png" width="70%" alt="">
               </div>
@@ -672,8 +669,8 @@
                 <br><br>
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
-                  본 프로젝트는 (주) 소프트스퀘어드에서 수료여부를 결정하기 위해 진행했습니다. 카피캣 프로젝트이다 보니 설계 과정이나 아이디어에서 시간을 쏟기 보다는 최대한 배달의 민족 어플과 비슷한
-                  Flow에서 개발에 초점을 맞춰서 진행하였습니다.
+                  본 프로젝트는 (주) 소프트스퀘어드에서 수료 여부를 결정하기 위해 진행했습니다. 카피캣 프로젝트이다 보니 설계 과정이나 아이디어에서 시간을 쏟기보단 최대한 배달의 민족 어플과 비슷한
+                  Flow에서 개발에 초점을 맞춰서 진행했습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">2. 프로젝트 주요 기능</nav>
@@ -684,13 +681,13 @@
 
                 <nav style="font-weight: bold; text-align: left;">3. 프로젝트 후기</nav>
                 <p style="text-align: left;">
-                  안드로이드 어플리케이션 개발을 처음 해서 안드로이드를 공부하는데 시간을 오래 사용하였습니다. Manifest부터 4대 주요 Component나 생명주기, ListView,
+                  안드로이드 어플리케이션 개발을 처음 해서 안드로이드를 공부하는데 시간을 오래 사용했습니다. Manifest부터 4대 주요 Component나 생명주기, ListView,
                   Fragment 등 많은 내용의 안드로이드에 대해 공부를 할 수 있었습니다. 뿐만 아니라 타기업의 API를 활용할 수 있는 3rd Party API에 대해서도 공부를 하며 서버와
-                  어떻게 통신하면 되는지에 대한 OkHttp에 대해서도 배우는 시간을 가졌습니다. 개발기간 중 절반은 이러한 안드로이드 기초적인것에 초점을 맞추어 공부를 하였고 나머지 기간동안 실제로
-                  안드로이드 주요 UI및 API를 엮는데 시간을 사용 하였습니다.
-                  <br>
-                  이렇게 개발실력 향상 뿐만이 아니라 팀원들과 개발적으로 소통을 어떻게 해야하는지도 또한 배웠습니다. 우선 팀원들과 소통을 할 때 제플린 및 슬랙이라는 프로그램을 이용하여 디자이너,
-                  서버개발자와 소통을 하였습니다. 이 과정에서 서버개발자는 어떠한 일을하고 디자이너는 무슨일을 하지에 대해서 각자의 역할을 알아가는 시간을 가졌습니다.
+                  어떻게 통신하면 되는지에 대한 OkHttp에 대해서도 배우는 시간을 가졌습니다. 개발 기간에 절반은 이러한 안드로이드 기초적인 것에 초점을 맞추어 공부 하였고 나머지 기간 동안 실제로
+                  안드로이드 주요 UI및 API를 엮는데 시간을 사용했습니다.
+                  <br><br>
+                  이렇게 개발실력 향상뿐만 아니라 팀원들과 개발적으로 소통을 어떻게 해야 하는지도 또한 배웠습니다. 우선 팀원들과 소통을 할 때 제플린 및 슬랙이라는 프로그램을 이용하여 디자이너,
+                  서버 개발자와 소통을했습니다. 이 과정에서 서버 개발자는 어떠한 일을 하고 디자이너는 무슨 일을 하지에 대해서 각자의 역할을 알아가는 시간을 가졌습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">기타</nav>
@@ -730,8 +727,9 @@
                 <br><br>
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
-                  많은 지역에서 키오스크가 도입되고 있지만 노인분들 포함한 멀티 기기에 익숙하지 않은 분들은 키오스크를 사용하는 것이 불편하다. 그래서 키오스크에서 누적된 데이터를 활용해 메뉴를
-                  추천해주고, 음성 대화를 통한 AI 키오스크를 개발했습니다.
+                  많은 지역에서 키오스크가 도입되고 있지만, 멀티 기기에 익숙하지 않은 분들은 키오스크를 사용하는 것이 불편하다는 취지에서 시작했습니다. 그래서 저희는 사용하기 편리한 AI 키오스크를
+                  개발했습니다. 먼저 Face Detection을 수행 한 후 사진 속에서 CFR API를 통하여 성별 및 나이에 따라 메뉴를 추천해주고 사용자들이 키오스크와 음성 대화가 가능하도록
+                  했습니다. 이 과정에서 음성 인식률을 높이기 위해 음성 후보정 처리를 진행했습니다.
                   <br>
                   <img class="img-fluid" src="img/portfolio/naver-service.JPG" alt="">
                 </p>
@@ -754,17 +752,17 @@
                 <nav style="font-weight: bold; text-align: left;">3. 프로젝트 후기</nav>
                 <p style="text-align: left;">
                   어플리케이션 시나리오는 사용자가 태블릿 근처로 오면 얼굴인식을 수행 후 해당 뷰를 JPG 변환 후 CFR API를 통해 얼굴 특징을 파악합니다. 이후 사용자 연령, 성별에 맞게 메뉴를
-                  추천 해주고, 주문 내역을 바탕으로 서버에 데이터를 저장합니다.
-                  <br>
+                  추천을 하고, 주문 내역을 바탕으로 서버에 데이터를 저장합니다.
+                  <br><br>
                   본 프로젝트에서 Face Detection과 CFR API를 이용하여 얼굴에 대한 특징을 파악하는 기능구현과 음성인식에서의 후보정 처리 기능을 맡았습니다. 얼굴 인식은 Github
-                  Opensource로 돼있는 코드를 활용했으며, 음성 인식의 정확도를 높이기 위해 음성 인식 결과를 DB에 축적하는 방식으로 후보정 처리를 진행했습니다.
+                  Opensource로 돼 있는 코드를 활용했으며, 음성 인식의 정확도를 높이기 위해 음성 인식 결과를 DB에 축적하는 방식으로 후보정 처리를 진행했습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">기타</nav>
                 <div style="text-align: left">개발 기간 : 2020.02.13 ~ 2020.02.15</div>
                 <div style="text-align: left">개발 툴 : Android Studio & PhpStorm & Datagrip & Postman & Zeplin &
                   SourceTree</div>
-                <div style="text-align: left">개발 언어 : Java & PHP & SQL</div>
+                <div style="text-align: left">개발 언어 : Java & NPM</div>
                 <br>
               </div>
             </div>
@@ -798,8 +796,8 @@
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
                   인하대학교를 통학하는 학생 대부분은 주안역 앞에 있는 버스정류장에서 511 버스를 탑니다. 하지만 지각을 하거나 막차 시간 근처의 경우에는 택시를 타는 경우가 많습니다. 이때 여러
-                  학생들은 목적지는 같지만 버스비보다 비싼 돈을 내고 혼자서 택시를 탑니다. 택시를 합승하지 않는 이유는 누가 택시를 탈지 모른다는점과 그들의 목적지를 모른다는점에 있습니다 또한 신뢰할
-                  수 없는 사람들과 같이 합승한다는점도 불안할 것으로 생각됩니다. 그래서 저희는 인하대학교 학우라는 신뢰할 수 있는 사람들과 목적지를 공유할 수 있는 커뮤니케이션 어플리케이션을
+                  학생은 목적지는 같지만, 버스비보다 비싼 돈을 내고 혼자서 택시를 탑니다. 택시를 합승하지 않는 이유는 누가 택시를 탈지 모른다는 점과 그들의 목적지를 모른다는 점에 있습니다. 또한 신뢰할
+                  수 없는 사람들과 같이 합승한다는 점도 불안할 것으로 생각됩니다. 그래서 저희는 인하대학교 학우라는 신뢰할 수 있는 사람들과 목적지를 공유할 수 있는 커뮤니케이션 어플리케이션을
                   개발했습니다.
                 </p>
 
@@ -852,7 +850,8 @@
                 <img class="img-fluid" src="img/portfolio/thisalarm-img.png" alt="">
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
-                  평소 영어를 읽고 쓰는 것은 수월하지만, 외국인과 대화하는 것이 힘든점에 출발하였습니다. 그래서 알람 기능을 통해 영어 발음을 주기적으로 공부할 수 있는 어플리케이션을 출시하였습니다.
+                  평소 영어를 읽고 쓰는 것은 수월하지만, 외국인과 대화하는 것이 힘들었습니다. 그래서 알람 기능과 음성인식 기술을 이용해 영어 발음을 주기적으로 공부할 수 있는 어플리케이션을
+                  출시했습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">2. 프로젝트 팀원 소개</nav>
@@ -864,17 +863,17 @@
                 <nav style="font-weight: bold; text-align: left;">3. 프로젝트 주요 기능</nav>
                 <p style="text-align: left;">
                   - Alarm Manager, Broadcast Receiver, Service를 이용한 알람 기능 개발<br>
-                  - SQLite를 통해 알람 요일, 시간을 저장하였고 알람 설정 데이터는 Sharedpreference를 이용하여 저장<br>
+                  - SQLite를 통해 요일, 시간을 저장하였고 알람 설정 데이터는 Sharedpreference를 이용하여 저장<br>
                   - 구글에서 제공하는 SpeechRecognizer 클래스를 통해 음성인식을 수행<br>
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">4. 프로젝트 후기</nav>
                 <p style="text-align: left;">
-                  이번 프로젝트에서 “알람 기능”에 대해 배울 수 있었습니다. 다만, 알람 기능을 테스트하기 위해 최대 1주가 필요하여 불편 했지만, 자주 사용하지 않던 Broadcast
-                  Receiver와 Service를 사용할 수 있는 좋은 기회였습니다. 초기에 알람 동작 원리를 이해하는데 어려움을 느꼈고 아래와 같이 동작하도록 개발했습니다.<br>
+                  이번 프로젝트에서 “알람 기능”에 대해 배울 수 있었습니다. 다만, 알람 기능을 테스트하기 위해 최대 1주가 필요하여 불편했지만, 자주 사용하지 않던 Broadcast
+                  Receiver와 Service를 사용할 좋은 기회였습니다. 초기에 알람 동작 원리를 이해하는데 어려움을 느꼈고 아래와 같이 동작하도록 개발했습니다.<br>
                   -1. Pending Intent에 NotificationID와 어떤 Broadcast Receiver를 호출할지를 추가합니다. 이후 이를, Alarm Manager에게 보내고
                   Alarm Manager는 Set or SetExact 함수를 통해 알람을 등록합니다.<br>
-                  -2. 이제 정해진 시간이 되면 OS에서 Broadcast하여 해당 Notification ID를 가진 Broadcast Receiver가 수신하여 Service를 호출하는 방식으로
+                  -2. 이제 정해진 시간이 되면 OS에서 Broadcast 하여 해당 Notification ID를 가진 Broadcast Receiver가 수신하여 Service를 호출하는 방식으로
                   진행했습니다.<br>
                   <br>
                   핸드폰 기종마다 알람 시간이 다른 문제가 발생했습니다. 이는 Android OS 버전마다 지원하는 함수가 달랐기 때문입니다. 저는 이 문제를 핸드폰 API마다 알람 등록 함수를 다르게
@@ -882,8 +881,8 @@
                   <br>
                   <br>
 
-                  알람을 강제로 끄는 것을 방지하기 위해 안드로이드에 내장된 홈 버튼을 막는 기능을 개발했습니다. 뒤로가기 버튼은 override를 통해 쉽게 막을 수 있었지만 그 외의 버튼은
-                  안드로이드에서 지원하지 않는다는 것을 알았습니다. 그래서 저는 Activity 생명주기를 이용했습니다. Activity가 onstop으로 갈 경우 다시 activity를 호출 했으며,
+                  알람을 강제로 끄는 것을 방지하기 위해 안드로이드에 내장된 홈 버튼을 막는 기능을 개발했습니다. 뒤로 가기 버튼은 override를 통해 쉽게 막을 수 있었지만 그 외의 버튼은
+                  안드로이드에서 지원하지 않는다는 것을 알았습니다. 그래서 저는 Activity 생명주기를 이용했습니다. Activity가 onstop으로 갈 경우 다시 activity를 호출했으며,
                   onPause에서는 ActivityManager를 이용했습니다.
                   <br>
                   <br>
@@ -919,23 +918,22 @@
             <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">(주)아모텍 인사관리 프로젝트</h2>
+                <h2 class="text-uppercase">아모텍 인사관리 프로젝트</h2>
                 <p class="item-intro text-muted">Android & WEB & Server</p>
 
-                <iframe width="48%" height="300px;" class="mx-auto"
-                  src="https://www.youtube.com/embed/xbfSNv4FnQI" muted></iframe>
+                <iframe width="48%" height="300px;" class="mx-auto" src="https://www.youtube.com/embed/xbfSNv4FnQI"
+                  muted></iframe>
 
-                <iframe width="48%" height="300px;" class="mx-auto"
-                  src="https://www.youtube.com/embed/kYOcy6lAK58" muted></iframe>
+                <iframe width="48%" height="300px;" class="mx-auto" src="https://www.youtube.com/embed/kYOcy6lAK58"
+                  muted></iframe>
 
                 <br><br>
 
 
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
-                  본 프로젝트는 외주를 받아 진행하였으며, ㈜ 아모텍 회사의 인사관리 프로그램을 개발하였습니다.
-                  회장님이 안드로이드 태블릿으로 회사의 조직도와 직원들을 확인하며, 관리자가 웹 페이지에서 회사의 조직도와 직원 정보들을 수정하는 기능을 갖고 있습니다.
-
+                  본 프로젝트는 외주를 받아 진행했으며, ㈜ 아모텍 회사의 인사관리 프로그램을 개발했습니다.
+                  회장님이 안드로이드 태블릿으로 회사의 조직도와 직원들을 확인하며, 관리자페이지에서 조직도, 직원 정보들을 수정하는 기능이 있습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">2. 프로젝트 팀원 소개</nav>
@@ -960,20 +958,19 @@
 
                 <nav style="font-weight: bold; text-align: left;">4. 프로젝트 후기</nav>
                 <p style="text-align: left;">
-                  Amotag 서버로부터 HR Server를 할당 받았고, Amotag DB로부터 직원 정보를 불러와 HR Server DB에 동기화하는 작업을 수행하였습니다. 이때 Amotag DB로
-                  접근할 수 있는 ID를 할당 받아 정해진 시간마다 API를 호출하여 ERP 동기화 작업을 수행하였습니다<br>
+                  Amotag 서버로부터 HR Server를 할당받았고, Amotag DB로부터 직원 정보를 불러와 HR Server DB에 동기화하는 작업을 수행 했습니다. 이때 Amotag DB로
+                  접근할 수 있는 ID를 할당받아 정해진 시간마다 API를 호출하여 ERP 동기화 작업을 수행했습니다.<br>
                   <img class="img-fluid" width="30%" height="100px" src="img/portfolio/amo_system.JPG" alt="">
                   <br>
-                  프로젝트에서 어려운 기능은 없었으나 DB를 설계하는 과정에서 많은 노력이 필요했습니다. 법인, 부서, 사원의 관계를 높이가 최대 6인 트리구조 형태로 진행했습니다. 각각의 법인은 루트
-                  노드이며, internal 노드는 부서를 가리키고, 직원은 External 노드로 표현하였습니다. 이때 각 노드의 ParentID 컬럼에 부모 ID를 저장했습니다.
-                  <br>또한, 검색 기능과 직원 정보 다운로드 기능을 개발하면서 생각보다 복잡한 쿼리문을 작성하면서 쿼리를 어떻게 작성해야 되는지 배울 수 있는 기회였습니다.
+                  DB를 설계하는 과정에서 많은 노력이 필요했습니다. 법인, 부서, 사원의 관계를 높이가 최대 6인 트리구조 형태로 진행했습니다. 각각의 법인은 루트
+                  노드이며, internal 노드는 부서를 가리키고, 직원은 External 노드로 표현했습니다. 이때 각 노드의 ParentID 컬럼에 부모 ID를 저장했습니다.
+                  <br>또한, 검색 기능과 직원 정보 다운로드 기능을 개발하면서 JOIN과 같은 긴 쿼리문을 작성하면서 쿼리를 좀 더 자세히 배울 수 있었습니다.
                   <img class="img-fluid" src="img/portfolio/amo_db_structure.png" alt=""><br>
-                  초기 개발 시 데이터가 적어 엑셀 다운로드가 정상적으로 동작했지만, 약 1000명의 실 데이터를 넣으면서 Timeout 이슈가 발생하였습니다. 물론 Timeout이 발생하지 않도록
+                  초기 개발 시 데이터가 적어 엑셀 다운로드가 정상적으로 동작했지만, 약 1000명의 실제 데이터를 넣으면서 Timeout 이슈가 발생했습니다. 물론 Timeout이 발생하지 않도록
                   쿼리를 다듬으면 좋지만, 한 번에 많은 양의 데이터를 다운로드하는 특성 때문에 이를 Nginx의 timeout 설정 값을 바꾸어 해결했습니다.
-                  또한, 많은 사용자들이 사용하면서 예상치 못한 곳에서 버그가 나왔고, Validation은 필수로 체크해야 됨을 배웠습니다.<br><br>
+                  또한, 많은 사용자들이 사용하면서 예상치 못한 곳에서 버그가 나왔고, Validation은 필수로 체크해야 함을 배웠습니다.<br><br>
                   프로젝트를 진행하면서 3번의 PM 인수인계가 발생하면서 많은 이슈가 생겼습니다. 고객사와의 마찰, 그리고 개발자와의 마찰 또한 생겼습니다. 이를 통해 인수인계의 중요성을 느꼈고
-                  팀원들과 어떻게 갈등을 해결하면 좋은지에 배웠습니다.
-
+                  팀원들과 어떻게 갈등을 해결해야 하는지를 배웠습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">5. 기타</nav>
@@ -981,10 +978,10 @@
                 </div>
                 <div style="text-align: left">개발 툴 : Android Studio & Visual studio Code & PhpStorm & Datagrip & Postman
                   & Zeplin & SourceTree</div>
-                <div style="text-align: left">개발 언어 : Java, html, css, javascript, PHP, SQL</div>
+                <div style="text-align: left">개발 언어 : Java, html, css, javascript, NPM</div>
                 <br>
                 <div style="text-align: left">코드는 회사 규정상 gitlab private로 설정 되있고 해당 프로젝트의 경우 포트폴리오 사용여부에 고객사측에서 동의하였기 때문에
-                  기재하였습니다. 코드의 경우 로컬에서 혹은 moomin@softsquared.com 로그인 후 확인 할 수 있습니다.</div>
+                  기재했습니다. 코드의 경우 로컬에서 혹은 moomin@softsquared.com 로그인 후 확인 할 수 있습니다.</div>
                 <br>
                 <img class="img-fluid" width="70%" src="img/portfolio/gitlab_img.png" alt="">
               </div>
@@ -1021,7 +1018,7 @@
 
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
-                  20-30 세대에서 인기있는 SNS 중 인스타그램을 데이터를 활용해 사용자들에게 여행지 정보를 제공해주는 서비스입니다.
+                  20-30 세대에서 인기있는 SNS 중 인스타그램 데이터를 활용해 사용자들에게 여행지 정보를 제공해주는 서비스입니다.
                 </p>
 
 
@@ -1030,16 +1027,16 @@
                   안드로이드 개발자 1명 (본인)<br>
                   서버 개발자 1명<br>
                   데이터 분석 개발자 1명<br>
-                  디자이너 1명<br>    
+                  디자이너 1명<br>
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">3. 프로젝트 주요 기능</nav>
                 <p style="text-align: left;">
                   - UI 구축 및 Retrofit 통신<br>
-                  - 최근 검색 RoomDB 저장<br>
+                  - 최근 검색 데이터를 RoomDB 이용해 저장<br>
                   - AWS의 S3 저장소에 이미지 업로드<br>
                   - AWS의 Cognito를 통한 유저 관리<br><br>
-                  
+
                   - 인스타그램 게시글 크롤링 후 전처리 과정<br>
                   - Graph DB에 게시글들 라벨링<br>
                 </p>
@@ -1089,7 +1086,7 @@
                 <nav style="font-weight: bold; text-align: left;">1. 프로젝트 소개</nav>
                 <p style="text-align: left;">
                   현재 나와 있는 문화생활 기록 앱들은 SNS 공유 기능, 백업 기능 부재 및 각종 버그와 같은 불편한 점이 있었습니다. 그래서 기존 앱들의 불편한 점은 개선하고 좋은 기능은 레퍼런스로
-                  참고하여 어플리케이션을 출시하였습니다.
+                  참고하여 어플리케이션을 출시했습니다.
 
                 </p>
 
@@ -1106,35 +1103,35 @@
                 <p style="text-align: left;">
                   - UI 구축 및 Retrofit 통신<br>
                   - 네트워크 사용량을 줄이기 위해 Paging 기법 사용<br>
-                  - 사진 업로드 기능<br>
+                  - 사진 편집 및 업로드 기능<br>
                   - View를 JPG로 변경 후 SNS 공유 기능<br>
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">4. 프로젝트 후기</nav>
                 <p style="text-align: left;">
-                  &nbsp;리뷰 목록들을 보여줄 때 한 번에 많은 양의 데이터를 받아올 경우 네트워크 낭비가 심해 Paging 기법을 사용하였습니다. Recyclerview에서 제일 마지막 아이템을
-                  스크롤을 했을 때 last index를 서버에 보내고, 서버로부터 일부 데이터를 받아 notify하였습니다.
-                  <br>
-                  &nbsp;리뷰 작성시, 사진을 찍거나 갤러리에서 이미지를 가져오는 기능을 구현할 때 안드로이드 시스템에서 제공하는 MediaStore를 사용하였습니다. 이때 파일 경로를 URI로
-                  변경하려고 했으나 android api 7.0부터 “File”을 직접 명시하는 것을 막아 File Provider에 xml을 추가하여 해결하였습니다.
-                  <br>
-                  &nbsp;이후 사진을 편집하는 과정에서 처음에는 Android에서 제공하는 crop intent를 사용했으나 이 기능이 일부 기기에서 호환이 되지 않아 문제가 생겼습니다. 그래서
-                  오픈소스로 상용화될 수 있는 라이브러리들을 찾았고 이들 중 저희 서비스에 제일 부합한 라이브러리를 사용하였습니다.
-                  <br>
-                  &nbsp; 사진을 firebase storage에 저장한 후, DB에 url을 저장하는 방식으로 수행하였습니다. 처음에 서버안의 directory에 사진을 저장하는 방식을 생각했으나
-                  이미지 관리, 서버 용량, 속도 문제로 firebase storage에 저장하는 방식을 채택하였습니다. 이때 Firebase 저장소 용량을 줄이기 위해 클라이언트에서 사진을 압축하고
-                  storage에 업로드 하였습니다.
-                  <br>
-                  &nbsp;또한 SNS 공유 시 먼저 view를 Bitmap으로 변환 후 이를 JPG로 파일 내부 저장소에 저장하도록 하였습니다. 이후 이 이미지를 SNS에 공유하는 기능을
+                  리뷰 목록들을 보여줄 때 한 번에 많은 양의 데이터를 받아올 경우 네트워크 낭비가 심해 Paging 기법을 사용했습니다. Recyclerview에서 제일 마지막 아이템을
+                  스크롤을 했을 때 last index를 서버에 보내고, 서버로부터 일부 데이터를 받아 notify 했습니다.
+                  <br><br>
+                  리뷰 작성 시, 사진을 찍거나 갤러리에서 이미지를 가져오는 기능을 구현할 때 안드로이드 시스템에서 제공하는 MediaStore를 사용했습니다. 이때 파일 경로를 URI로
+                  변경하려고 했으나 android api 7.0부터 “File”을 직접 명시하는 것을 막아 File Provider에 xml을 추가하여 해결했습니다.
+                  <br><br>
+                  이후 사진을 편집하는 과정에서 처음에는 Android에서 제공하는 crop intent를 사용했으나 이 기능이 일부 기기에서 호환이 되지 않아 문제가 생겼습니다. 그래서
+                  오픈소스로 상용화될 수 있는 라이브러리들을 찾았고 이들 중 저희 서비스에 제일 부합한 라이브러리를 사용했습니다.
+                  <br><br>
+                  사진을 firebase storage에 저장한 후, DB에 url을 저장하는 방식으로 수행했습니다. 처음에 서버 안의 directory에 사진을 저장하는 방식을 생각했으나
+                  이미지 관리, 서버 용량, 속도 문제로 firebase storage에 저장하는 방식을 채택했습니다. 이때 Firebase 저장소 용량을 줄이기 위해 클라이언트에서 사진을 압축하고
+                  storage에 업로드했습니다.
+                  <br><br>
+                  또한 SNS 공유 시 먼저 view를 Bitmap으로 변환 후 이를 JPG로 파일 내부 저장소에 저장하도록했습니다. 이후 이 이미지를 SNS에 공유하는 기능을
                   넣었습니다.
-                  <br>
-                  &nbsp;이번 프로젝트를 통해 사용자가 100명 내외로 적지만 실제로 출시하여 사용자의 의견을 들을 수 있는 좋은 기회였습니다.
+                  <br><br>
+                  이번 프로젝트를 통해 사용자가 100명 내외로 적지만 실제로 출시하여 사용자의 의견을 들을 좋은 기회였습니다.
                 </p>
 
                 <nav style="font-weight: bold; text-align: left;">5. 기타</nav>
                 <p style="text-align: left;">
                   개발 기간 : 2020.02 ~ 2020.03<br>
-                  개발 툴 : Android Studio & PhpStorm & Packet Capture & Source Tree<br>
+                  개발 툴 : Android Studio & Packet Capture & Source Tree<br>
                   개발 언어 : Java<br>
                   <a href="https://github.com/moyoungmini/moari" style="color: #000000" target="_blank"><img
                       width="100px;" height="100px;" src="img/logos/git-image.png"></a>
@@ -1179,8 +1176,8 @@
                       <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 빅데이터를 이용한 프로그램 개발
                     </nav>
                     <nav style="margin-bottom: 5px;">
-                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 사용자가 반려견의 증상들을 입력 한 후 어플리케이션에서 해당
-                      증상의 키워드들을 바탕으로 해당되는 병명과 해결책 리스트를 제시해주는 어플리케이션입니다.
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 사용자가 반려견의 증상들을 입력한 후, 어플리케이션에서 해당
+                      증상의 키워드를 바탕으로 해당하는 병명과 해결책 리스트를 제시해주는 어플리케이션입니다.
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 역할</nav> : 아디이어 기획 및 발표
@@ -1204,7 +1201,7 @@
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 전동스쿠터로 인한 사고다발지역과 혹은 사고가 더욱 일어나서는
-                      안되는 곳을 네트워크 분석 기법을 통하여 속도규제 지역을 선정해주는 프로그램을 개발하였습니다.
+                      안되는 곳을 네트워크 분석 기법을 통하여 속도규제 지역을 선정해주는 프로그램을 개발했습니다.
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 역할</nav> : WEB 개발
@@ -1227,9 +1224,9 @@
                       <nav style="float: left; font-weight: 700;">공모전 주제</nav> : 농협 관련 일반부문
                     </nav>
                     <nav style="margin-bottom: 5px;">
-                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 많은 디자이너들은 같은 형식의 디자인들을 반복적으로 수행하는 경우가
-                      많다고 합니다. 만약 이러한 반복적인 일들을 대신 해주는 프로그램이 있다면 어떨까하는 관점에서 출발하였습니다. 그래서 저희는 농산물들을 직접 판매하시는 분들을 대상으로 디자인을
-                      프로그램이 대신해주는 프로젝트를 개발하였습니다.
+                      <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 많은 디자이너는 같은 형식의 디자인을 반복적으로 수행하는 경우가
+                      많다고 합니다. 만약 이러한 반복적인 일들을 대신해주는 프로그램이 있다면 어떨까 하는 관점에서 출발했습니다. 그래서 저희는 농산물들을 직접 판매하시는 분들을 대상으로 디자인을
+                      프로그램이 대신해주는 프로젝트를 개발했습니다.
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 역할</nav> : Web 개발및 기획
@@ -1253,9 +1250,10 @@
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 내용</nav> : 인하대학교를 통학하는 학생 대부분은 주안역 앞에 있는 버스정류장에서
-                      511 버스를 탑니다. 하지만 지각을 하거나 막차 시간 근처의 경우에는 택시를 타는 경우가 많습니다. 이때 여러 학생들은 목적지는 같지만 버스비보다 비싼 돈을 내고 혼자서
-                      택시를 탑니다. 택시를 합승하지 않는 이유는 누가 택시를 탈지 모른다는점과 그들의 목적지를 모른다는점에 있습니다 또한 신뢰할 수 없는 사람들과 같이 합승한다는점도 불안할 것으로
-                      생각 됩니다. 그래서 저희는 인하대학교 학우라는 신뢰할 수 있는 사람들과 목적지를 공유할 수 있는 커뮤니케이션 어플리케이션을 개발 하였습니다.
+                      511 버스를 탑니다. 하지만 지각을 하거나 막차 시간 근처의 경우에는 택시를 타는 경우가 많습니다. 이때 여러 학생은 목적지는 같지만, 버스비보다 비싼 돈을 내고 혼자서
+                      택시를 탑니다. 택시를 합승하지 않는 이유는 누가 택시를 탈지 모른다는 점과 그들의 목적지를 모른다는 점에 있습니다. 또한 신뢰할 수 없는 사람들과 같이 합승한다는 점도 불안할
+                      것으로
+                      생각됩니다. 그래서 저희는 인하대학교 학우라는 신뢰할 수 있는 사람들과 목적지를 공유할 수 있는 커뮤니케이션 어플리케이션을 개발했습니다.
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 역할</nav> : Android 개발 & Web 개발 & 기획
@@ -1280,11 +1278,11 @@
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 내용</nav> :
-                      현재 택시와 대중교통을 혼합한 길찾기를 제공하는 잘 알려진 서비스는 없다고 알고 있습니다. 그래서 저희는 돈이 부족한 사회 초년생과 대학생들을 대상으로 막차시간에 택시로만이
-                      아닌, 택시와 대중교통을 혼합한 길찾기 어플리케이션을 개발하였습니다.
-                      사용자의 출발지, 목적지를 지름으로 하는 원 형태에서 핫플레이스 스팟을 뽑아 낸 후 스팟을 기준으로 각각 대중교통 비용 + 택시 비용을 모두 비교하여 비용이 적은 10개의
+                      현재 택시와 대중교통을 혼합한 길 찾기를 제공하는 잘 알려진 서비스는 없다고 알고 있습니다. 그래서 저희는 돈이 부족한 사회 초년생과 대학생들을 대상으로 막차 시간에 택시만이
+                      아닌, 택시와 대중교통을 혼합한 길 찾기 어플리케이션을 개발했습니다..
+                      사용자의 출발지, 목적지를 지름으로 하는 원 형태에서 핫플레이스 스팟을 뽑아낸 후 스팟을 기준으로 각각 대중교통 비용 + 택시 비용을 모두 비교하여 비용이 적은 10개의
                       리스트를 뽑아내어
-                      사용자에게 보여주는 방식으로 진행하였습니다.
+                      사용자에게 보여주는 방식으로 진행했습니다.
                       <!--현재 지도 관련 플랫폼 중 택시와 대중교통을 혼합하여 길찾기를 제공하는
                       서비스는 없는것으로 알고 있습니다. 그래서 저희는 이러한 서비스르 제공하는 프로그램을 기획하였습니다.
                       저희는 1박2일 동안 구현을 해야하기 때문에 디테일적인 구현보다는 어느정도 큰 틀에서 구현하는데 신경을 썻습니다. 먼저 사용자가 출발지와 목적지를 입력 한 후 이 장소에서
@@ -1320,11 +1318,11 @@
                     </nav>
                     <nav style="margin-bottom: 5px;">
                       <nav style="float: left; font-weight: 700;">공모전 내용</nav> :
-                      많은 지역에서 키오스크가 도입되고 있지만 멀티 기기에 익숙하지 않은 분들은 키오스크를 사용하는것이 불편하다는 취지에서 시작했습니다. 그래서 저희는 사용하기 편리한 AI
-                      키오스크를 개발하였습니다.
-                      먼저 Face Detection을 수행하여 수행 한 후 사진속에서 CFR API를 통하여 성별 및 나이에 따라 메뉴를 추천해주고 사용자들이 키오스크와 음성
+                      많은 지역에서 키오스크가 도입되고 있지만, 멀티 기기에 익숙하지 않은 분들은 키오스크를 사용하는것이 불편하다는 취지에서 시작했습니다. 그래서 저희는 사용하기 편리한 AI
+                      키오스크를 개발했습니다.
+                      먼저 Face Detection을 수행한 후 사진 속에서 CFR API를 통하여 성별 및 나이에 따라 메뉴를 추천해주고 사용자들이 키오스크와 음성
                       대화가 가능하도록
-                      하였습니다. 이 과정에서 보다 음성 인식률을 높이기 위해 음성 후보정 처리를 진행하였습니다.
+                      했습니다. 이 과정에서 음성 인식률을 높이기 위해 음성 후보정 처리를 진행했습니다.
 
 
                     </nav>
@@ -1385,27 +1383,27 @@
                 </div>
 
                 <p style="text-align: left;">
-                  &nbsp;학교에서 Computer Science를 공부하면서 현업에서 어떻게 일 하는지 궁금증이 있었습니다. 그러던 중 지인 추천으로 스타트업에서 안드로이드 교육을 수료하면
+                  학교에서 Computer Science를 배우면서 현업에서 어떻게 일하는지 궁금증이 있었습니다. 그러던 중 지인 추천으로 스타트업에서 안드로이드 교육을 수료하면
                   프리랜서로 근무할
-                  수 있는 제안을 받았습니다. 그래서 2달 동안 매일 5시간을 할애하며 안드로이드를 공부했고, 매주 피드백을 들으며 성장하였습니다. 마지막 시간에는 '배달의 민족' 카피캣 프로젝트를
-                  성공적으로 진행하였습니다. 이후 1년동안 프리랜서로 이 회사에서 근무하기 시작했습니다. 저는 2달 동안 많은 노력을 기울였고 무엇이든지 할 수 있다는 자신감을 얻었습니다.
+                  수 있는 제안을 받았습니다. 그래서 2달 동안 매일 5시간을 할애하며 안드로이드를 공부했고, 매주 피드백을 들으며 성장했습니다. 마지막 시간에는 '배달의 민족' 카피캣 프로젝트를
+                  성공적으로 진행했습니다. 이후 1년 동안 프리랜서로 이 회사에서 근무하기 시작했습니다. 저는 2달 동안 많은 노력을 기울였고 무엇이든지 할 수 있다는 자신감을 얻었습니다.
                 </p>
 
                 <p style="text-align: left;">
-                  &nbsp;이후 "아임폴리스", "아모텍HR" 외주 프로젝트에 참여하였습니다. 이 과정에서 현업에서 어떤 프로세스로 일 하는지를 배울 수 있었고 무엇보다 팀원들과 어떻게 협업을 하는지
-                  배울 수 있었습니다. 그 당시 "일 잘하는 개발자는 주어진 업무를 소통 없이 150% 하는 것보다, 소통하며 80%하는 개발자"라는 점을 항상 생각하며 일을 진행 하였습니다.
+                  이후 '아임폴리스', '아모텍HR' 외주 프로젝트에 참여했습니다. 이 과정에서 현업에서 어떤 프로세스로 일하는지를 배울 수 있었고 무엇보다 팀원들과 어떻게 협업을 하는지
+                  배울 수 있었습니다. 그 당시 "일 잘하는 개발자는 주어진 업무를 소통 없이 150% 하는 것보다, 소통하며 80% 일하는 개발자"라는 점을 항상 생각하며 일을 진행했습니다.
                 </p>
 
                 <p style="text-align: left;">
-                  &nbsp;프로젝트를 성공적으로 수행하면서 개발에 대한 흥미가 생겼습니다. 그래서 여러 해커톤에 참가하고, IT 동아리에 참여하여 직접 안드로이드 어플을 출시하는 값진 경험을
-                  하였습니다. 또한 학교에서
-                  배웠던 Computer Science에 흥미가 생겨 관심있는 과목에 대해 블로그에 정리를 하며 비전공자들을 대상으로 교육을 하는 값진 경험을 하였습니다. 이 과정에서 저는 개발에 대한
+                  프로젝트를 성공적으로 수행하면서 개발에 대한 흥미가 생겼습니다. 그래서 여러 해커톤에서 수상하는 경험과, IT 동아리에 참여하여 직접 안드로이드 어플을 출시하는 값진 경험을
+                  했습니다. 또한 학교에서
+                  배웠던 Computer Science에 흥미가 생겨 관심있는 과목에 대해 블로그에 정리하며 비전공자들을 대상으로 교육을 하는 값진 경험을했습니다. 이 과정에서 저는 개발에 대한
                   열정을 확인할 수 있었습니다.
                 </p>
 
                 <p style="text-align: left;">
-                  &nbsp;회사에서 안드로이드뿐만 아니라 웹, 서버도 함께 개발을 했습니다. 3 분야 모두를 잘 아는것은 아닙니다. 하지만 저가 이렇게 여러 분야에 손 댄 이유는 “개발자는 익숙한
-                  것으로부터 멀어지고, 새로운 것을 받아들이는 것에 흥미가 있어야 된다고” 생각했기 때문입니다. 그래서 저는 모르는 분야에 일을 맡기더라도 책임감 있게 완수할 수 있습니다.
+                  주로 안드로이드 개발을 했지만, 가끔 웹, 서버도 함께 개발했습니다. 왜냐하면 “개발자는 익숙한
+                  것에만 머무르는 것이 아닌, 새로운 것을 받아들이는 것에 흥미가 있어야 한다고” 생각했기 때문입니다. 그래서 저는 모르는 분야에 일을 맡기더라도 흥미를 갖고 최선을 다할 것입니다.
                 </p>
               </div>
 
